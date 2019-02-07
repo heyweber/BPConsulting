@@ -1,0 +1,89 @@
+$primary: #63733d;
+$primary-overlay: rgba(99, 115, 61, 0.7);
+
+body {
+  margin-top: 135px;
+}
+
+.navbar {
+  box-shadow: 2px 2px 5px $primary;
+  opacity: 0.9;
+  background: #fff;
+
+  .nav-item {
+    font-size: 1.4rem;
+    padding-right: 1.4rem;
+  }
+}
+
+#showcase {
+  position: relative;
+  background: url("../img/path1.jpg");
+  min-height: 600px;
+
+  a {
+    color: #fff;
+  }
+
+  .primary-overlay {
+    background: $primary-overlay;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.info-header {
+  width: 75%;
+  margin: auto;
+  border-bottom: 1px #ddd solid;
+}
+
+#authors {
+  img {
+    margin-top: -50px;
+  }
+
+  .card:hover {
+    background: $primary;
+    color: #fff;
+
+    .fab {
+      color: #fff;
+    }
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+
+  .fab {
+    color: black;
+  }
+}
+
+footer a {
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .notonmobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #showcase {
+    min-height: 700px;
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  .mb-resp {
+    margin-bottom: 1rem;
+  }
+}
